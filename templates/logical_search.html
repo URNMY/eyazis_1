@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Logical search</title>
+    <style>
+        body {
+            font-family: "Times New Roman", sans-serif;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 10px;
+            padding: 0;
+        }
+
+        #menu {
+            background-color: slategray;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+        }
+
+        #menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+        #menu a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+<ul id="menu">
+        <li><a href="\update_base">Insert Into Base</a></li>
+        <li><a href="\logical_search">Logical Search</a></li>
+        <li><a href="\info_about_metrix">Information About Metrics</a></li>
+        <li><a href="\help">Instruction</a></li>
+</ul>
+
+<form class="form-control" method="post" style="width: 800px; margin-left: 350px; border-width: 7px">
+    <input type="text" name="query" id="text_query" placeholder="Enter logical formula or natural language question ..." class="form-control"><br>
+    <button type="submit"
+            style="border-radius: 20px; background: slategray; width: 200px; margin-left: 300px; color: white">Search For Documents</button>
+</form>
+{% if request.method == 'POST' %}
+<p style="background: lightgray; width: 40%; height: 40px;
+          border-radius: 20px; padding-left: 10px; margin-top: 10px; margin-left: 10px">{{ flag }}</p>
+{% for item in result %}
+    <div style="background: lightgray; width: 30%; height: 60px;
+                border-radius: 20px; margin: 10px; padding-left: 10px">
+        <a href="{{ item[0] }}">{{item[0]}}</a>
+        <p style="color: black">{{ item[1] }}</p>
+    </div>
+{% endfor %}
+{% endif %}
+<script>
+        // Получаем ссылки на элементы input и текст
+        const outputText = document.getElementById("text_query");
+        // Получаем все элементы с классом "clickable"
+        const clickableElements = document.querySelectorAll(".clickable");
+
+        // Добавляем обработчик события клика к каждому кликабельному элементу
+        clickableElements.forEach(function (element) {
+            element.addEventListener("click", function () {
+                // Записываем текст кликабельного элемента в input
+                outputText.value = element.textContent;
+            });
+        });
+</script>
+</body>
+</html>

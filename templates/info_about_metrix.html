@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Info about metrix</title>
+    <style>
+        body {
+            font-family: "Times New Roman", sans-serif;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 10px;
+            padding: 0;
+        }
+
+        #menu {
+            background-color: slategray;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+        }
+
+        #menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+        #menu a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+<ul id="menu">
+        <li><a href="\update_base">Insert Into Base</a></li>
+        <li><a href="\logical_search">Logical Search</a></li>
+        <li><a href="\info_about_metrix">Information About Metrics</a></li>
+        <li><a href="\help">Instruction</a></li>
+</ul>
+<ul class="list-group-item-primary">
+  <li>The logical model treats terms in a query as Boolean variables.</li>
+  <li>If there is a term in the document, the corresponding variable takes the value “true”.</li>
+  <li>Assigning weighting coefficients to terms is not allowed.</li>
+  <li>Queries are formulated as arbitrary Boolean expressions that link terms using standard logical operators: and, or, not.</li>
+  <li>The measure of compliance of the request with the document is the retrieval status value (RSV).</li>
+  <li>In the Boolean model, the fetch status is either 1 if the query expression evaluates to true for a given document, or 0 otherwise.</li>
+  <li>All documents with RSV = 1 are considered relevant to the query.</li>
+</ul>
+
+
+
+<form class="form-control" method="post"> 
+    <button type="submit" style="border-radius: 20px; background: slategray; width: 200px; margin-left: 400px; color: white">Start test</button>
+</form>
+{% if request.method == 'POST' %}
+<p> {{result[0]}} </p>
+<p> {{result[1]}} </p>
+{% endif %}
+</body>
+</html>

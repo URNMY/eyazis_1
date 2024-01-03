@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Help</title>
+    <style>
+        body {
+            font-family: "Times New Roman", sans-serif;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 10px;
+            padding: 0;
+        }
+
+        #menu {
+            background-color: slategray;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+        }
+
+        #menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+        #menu a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+<ul id="menu">
+        <li><a href="\update_base">Insert Into Base</a></li>
+        <li><a href="\logical_search">Logical Search</a></li>
+        <li><a href="\info_about_metrix">Information About Metrics</a></li>
+        <li><a href="\help">Instruction</a></li>
+</ul>
+    <ul class="list-group-item-primary">
+      <li style="font-size: 20px">1. There are some interface elements to make local documents stored inside our base.</li>
+        <img src="../static/images/UpdateBase.png" alt="Пример заполнения" width="1500">
+      <li style="font-size: 20px">2. There are some interface elements to search different words among stored documents.</li>
+        <ul class="list-group-item-primary">
+            <li style="font-size: 20px">1. There is and example of logical search, cause search
+                expression consists of words and logical operators.</li>
+                <img src="../static/images/LogicalSearchCorrectLogical.png" alt="Logical expression example" width="1500">
+            <li style="font-size: 20px">2. There is and example of natural language search,
+                cause search expression consists of words and natural language expressions.</li>
+                <img src="../static/images/LogicalSearchCorrectNL.png" alt="NLanguage expression example" width="1500">
+            <li style="font-size: 20px">3. There is and example of logical search, that causes an empty result
+                output and makes system drop special phrase to let user know that there is no documents found.</li>
+                <img src="../static/images/LogicalSearchIncorrect.png" alt="Failed example" width="1500">
+        </ul>
+      <li style="font-size: 20px">3. Metrics screen consists of different test metrics to be used during our programs efficiency analyze</li>
+        <img src="../static/images/Metrics.png" alt="Metrics" width="1500">
+    </ul>
+</body>
+</html>

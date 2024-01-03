@@ -1,0 +1,52 @@
+E:\WorkSpace\PycharmProjects\EYAzIIS\Lab1\files\license-en.txt
+                              "FPS Monitor"
+                                                    
+                        End user license agreement  
+
+
+    The "FPS Monitor" is distributed as shareware i.e. you can try software
+    before you buy one. This means:
+
+ 1. All copyrights to "FPS Monitor" are exclusively owned by Eduard Kozadaev.
+
+ 2. Once registered, the user is granted a non-exclusive license to personal use
+    "FPS Monitor" on his own computers, for any legal purpose, at a time.
+    Granted license may not be rented, leased or transferred, if the person
+    receiving it agrees to terms of this license.
+
+ 3. The "FPS Monitor" unregistered trial version, available on software web site,
+    may  be  freely distributed, with exceptions noted below, provided the distribution
+    package is not modified. No person or company may charge a fee for 
+    the distribution of "FPS Monitor" without written permission from the
+    copyright holder. The "FPS Monitor" unregistered trial version may not
+    be bundled or distributed with any other package without written
+    permission of the copyright holder.
+
+ 4. To  register  please  visit  our  site  https://fpsmon.com
+    There you will find detailed instruction to how to register "FPS Monitor".
+    Or you can buy a license in Steam store.
+
+ 5. "FPS Monitor" IS DISTRIBUTED "AS IS". NO WARRANTY OF ANY KIND IS
+    EXPRESSED OR IMPLIED.  YOU USE AT YOUR OWN  RISK. Eduard Kozadaev
+    WILL  NOT  BE LIABLE FOR DATA LOSS, DAMAGES, LOSS OF PROFITS OR ANY
+    OTHER KIND OF LOSS WHILE USING OR MISUSING THIS SOFTWARE.
+
+ 6. You may not use,  copy,  emulate,  clone,  rent,  lease,  sell,  modify,
+    decompile, disassemble, otherwise  reverse  engineer,  or  transfer  the
+    licensed program, or any subset  of  the  licensed  program,  except  as
+    provided for in this agreement. Any such unauthorized use  shall  result
+    in immediate and automatic termination of this license and may result in
+    criminal and/or civil prosecution.
+
+    All rights not expressly granted here are reserved by Eduard Kozadaev.
+
+ 7. Installing and  using "FPS Monitor" signifies  acceptance  of  these
+    terms  and conditions of the license.
+
+ 8. If you do not agree with the terms of this license you must  remove
+    "FPS Monitor" files from your storage devices and cease to use
+    the product.
+
+    Thank you for using "FPS Monitor"
+
+                                                            Eduard Kozadaev

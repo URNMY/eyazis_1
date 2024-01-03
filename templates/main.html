@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+    <style>
+        body {
+            font-family: "Times New Roman", sans-serif;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 10px;
+            padding: 0;
+        }
+
+        #menu {
+            background-color: slategray;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+        }
+
+        #menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+        #menu a:hover {
+            background-color: #555;
+        }
+    </style>
+
+</head>
+<body>
+    <ul id="menu">
+            <li><a href="\update_base">Insert Into Base</a></li>
+            <li><a href="\logical_search">Logical Search</a></li>
+            <li><a href="\info_about_metrix">Information About Metrics</a></li>
+            <li><a href="\help">Instruction</a></li>
+    </ul>
+</body>
+</html>
